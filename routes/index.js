@@ -9,7 +9,7 @@ exports.view = function(req, res) {
       .exec(displayPosts);
 
       function displayPosts(err, data)  {
-      	//console.log(err);
+      	// console.log(err);
       	res.render('index', {'data': data})
       }
 
